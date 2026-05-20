@@ -9,7 +9,7 @@ const PRODUCTS = [
     category: "Granite",
     pricePerTon: 8500,
     description: "Premium 3/4 inch crushed granite stones, ideal for concrete mixes, road base, and general construction.",
-    imageUrl: "https://images.unsplash.com/photo-1518542790933-8fa988944517?q=80&w=2000&auto=format&fit=crop",
+    imageUrl: "/images/1.jpg",
   },
   {
     id: "sharp-sand",
@@ -17,7 +17,7 @@ const PRODUCTS = [
     category: "Sand",
     pricePerTon: 4500,
     description: "Coarse sharp sand perfect for block making, concrete work, and floor screeding.",
-    imageUrl: "https://images.unsplash.com/photo-1621508216173-958428385437?q=80&w=2000&auto=format&fit=crop",
+    imageUrl: "/images/2.jpg",
   },
   {
     id: "laterite",
@@ -25,7 +25,7 @@ const PRODUCTS = [
     category: "Filling",
     pricePerTon: 2500,
     description: "High-quality red laterite for foundation filling and road construction base.",
-    imageUrl: "https://images.unsplash.com/photo-1529312265969-923f733ebdf1?q=80&w=2000&auto=format&fit=crop",
+    imageUrl: "/images/3.jpg",
   },
   {
     id: "granite-1-2",
@@ -33,7 +33,7 @@ const PRODUCTS = [
     category: "Granite",
     pricePerTon: 9000,
     description: "Fine crushed 1/2 inch granite stones, excellent for high-strength concrete and asphalt.",
-    imageUrl: "https://images.unsplash.com/photo-1549463510-74e892c90666?q=80&w=2000&auto=format&fit=crop",
+    imageUrl: "/images/4.jpg",
   },
   {
     id: "stone-dust",
@@ -41,7 +41,7 @@ const PRODUCTS = [
     category: "Dust",
     pricePerTon: 3500,
     description: "Fine quarry dust used for paving block installation and as a sand alternative.",
-    imageUrl: "https://images.unsplash.com/photo-1580978310931-158f964dc08b?q=80&w=2000&auto=format&fit=crop",
+    imageUrl: "/images/5.jpg",
   },
   {
     id: "hardcore",
@@ -49,7 +49,7 @@ const PRODUCTS = [
     category: "Base",
     pricePerTon: 6000,
     description: "Large irregular stones for foundation hardcore packing and erosion control.",
-    imageUrl: "https://images.unsplash.com/photo-1506861596707-16013a776c11?q=80&w=2000&auto=format&fit=crop",
+    imageUrl: "/images/6.jpg",
   }
 ];
 
@@ -68,22 +68,22 @@ export default function ProductsPage() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="flex flex-col md:flex-row gap-8">
-          
+
           {/* Sidebar Filters */}
           <div className="w-full md:w-64 shrink-0 space-y-8">
             <div>
               <h3 className="font-heading font-semibold text-lg text-secondary-900 mb-4 flex items-center gap-2">
                 <Filter size={18} /> Filters
               </h3>
-              
+
               <div className="space-y-6">
                 {/* Search */}
                 <div>
                   <label className="block text-sm font-medium text-secondary-700 mb-2">Search</label>
                   <div className="relative">
-                    <input 
-                      type="text" 
-                      placeholder="e.g. Granite..." 
+                    <input
+                      type="text"
+                      placeholder="e.g. Granite..."
                       className="w-full pl-10 pr-4 py-2 border border-secondary-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-shadow"
                     />
                     <Search size={18} className="absolute left-3 top-1/2 -translate-y-1/2 text-secondary-400" />
@@ -112,9 +112,9 @@ export default function ProductsPage() {
               {PRODUCTS.map(product => (
                 <Link href={`/products/${product.id}`} key={product.id} className="group bg-white border border-secondary-100 rounded-2xl overflow-hidden hover:shadow-xl hover:shadow-primary-500/5 hover:border-primary-200 transition-all flex flex-col">
                   <div className="relative h-48 w-full overflow-hidden">
-                    <img 
-                      src={product.imageUrl} 
-                      alt={product.name} 
+                    <img
+                      src={product.imageUrl}
+                      alt={product.name}
                       className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute top-4 left-4">
@@ -123,11 +123,11 @@ export default function ProductsPage() {
                       </span>
                     </div>
                   </div>
-                  
+
                   <div className="p-6 flex-1 flex flex-col">
                     <h3 className="font-heading font-bold text-lg text-secondary-900 mb-2 group-hover:text-primary-600 transition-colors">{product.name}</h3>
                     <p className="text-sm text-secondary-500 mb-4 line-clamp-2 flex-1">{product.description}</p>
-                    
+
                     <div className="flex items-center justify-between mt-auto pt-4 border-t border-secondary-100">
                       <div className="flex flex-col">
                         <span className="text-xs text-secondary-500">Starting at</span>
@@ -142,7 +142,7 @@ export default function ProductsPage() {
               ))}
             </div>
           </div>
-          
+
         </div>
       </div>
     </div>
