@@ -28,35 +28,18 @@ export default function RegisterPage() {
         <div className="bg-white py-8 px-4 shadow-xl shadow-secondary-200/20 sm:rounded-3xl sm:px-10 border border-secondary-100">
           <form className="space-y-6" action="#" method="POST">
             
-            <div className="grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-2">
-              <div>
-                <label htmlFor="first-name" className="block text-sm font-medium text-secondary-700">
-                  First name
-                </label>
-                <div className="mt-1">
-                  <input
-                    type="text"
-                    name="first-name"
-                    id="first-name"
-                    autoComplete="given-name"
-                    className="block w-full rounded-xl border border-secondary-200 px-4 py-3 shadow-sm focus:border-primary-500 focus:outline-none focus:ring-primary-500"
-                  />
-                </div>
-              </div>
-
-              <div>
-                <label htmlFor="last-name" className="block text-sm font-medium text-secondary-700">
-                  Last name
-                </label>
-                <div className="mt-1">
-                  <input
-                    type="text"
-                    name="last-name"
-                    id="last-name"
-                    autoComplete="family-name"
-                    className="block w-full rounded-xl border border-secondary-200 px-4 py-3 shadow-sm focus:border-primary-500 focus:outline-none focus:ring-primary-500"
-                  />
-                </div>
+            <div>
+              <label htmlFor="full-name" className="block text-sm font-medium text-secondary-700">
+                Full name
+              </label>
+              <div className="mt-1">
+                <input
+                  type="text"
+                  name="full-name"
+                  id="full-name"
+                  autoComplete="name"
+                  className="block w-full rounded-xl border border-secondary-200 px-4 py-3 shadow-sm focus:border-primary-500 focus:outline-none focus:ring-primary-500"
+                />
               </div>
             </div>
 
