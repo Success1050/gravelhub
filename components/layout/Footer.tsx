@@ -39,7 +39,7 @@ export default function Footer() {
               <li><Link href="/products" className="hover:text-primary-400 transition-colors">Our Materials</Link></li>
               <li><Link href="/calculator" className="hover:text-primary-400 transition-colors">Pricing Calculator</Link></li>
               <li><Link href="/trucks" className="hover:text-primary-400 transition-colors">Truck Fleet</Link></li>
-              <li><Link href="/about" className="hover:text-primary-400 transition-colors">About Us</Link></li>
+              <li><Link href="/contact" className="hover:text-primary-400 transition-colors">Contact Us</Link></li>
             </ul>
           </div>
 
@@ -59,11 +59,11 @@ export default function Footer() {
             <ul className="space-y-4 text-sm">
               <li className="flex items-start gap-3">
                 <MapPin size={18} className="text-primary-500 mt-0.5 shrink-0" />
-                <span>123 Quarry Road, Industrial Estate, Lagos, Nigeria.</span>
+                <span>123 Construction Way, Industrial Park, TX 75001</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={18} className="text-primary-500 shrink-0" />
-                <span>+234 800 GRAVEL</span>
+                <span>+1 (555) 123-4567</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={18} className="text-primary-500 shrink-0" />

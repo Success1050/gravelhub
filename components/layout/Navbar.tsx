@@ -29,6 +29,9 @@ export default function Navbar() {
             <Link href="/trucks" className="text-secondary-600 hover:text-primary-500 font-medium transition-colors">
               Our Fleet
             </Link>
+            <Link href="/contact" className="text-secondary-600 hover:text-primary-500 font-medium transition-colors">
+              Contact
+            </Link>
 
             <div className="flex items-center space-x-4 ml-4 border-l border-secondary-200 pl-4">
               <Link href="/login" className="text-secondary-800 hover:text-primary-500 font-medium transition-colors">
