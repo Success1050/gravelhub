@@ -29,6 +29,9 @@ export default function Navbar() {
             <Link href="/trucks" className="text-secondary-600 hover:text-primary-500 font-medium transition-colors">
               Our Fleet
             </Link>
+            <Link href="/about" className="text-secondary-600 hover:text-primary-500 font-medium transition-colors">
+              About
+            </Link>
             <Link href="/contact" className="text-secondary-600 hover:text-primary-500 font-medium transition-colors">
               Contact
             </Link>
